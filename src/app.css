@@ -11,3 +11,16 @@ html{
 h1,h2,h3 .poppins{
     font-family: 'Poppins', sans-serif;
 }
+
+
+@keyframes rotate-colors {
+    0% { background-color: #664693; }
+    25% { background-color: #7c3aed; }
+    50% { background-color: #4c1d95; }
+    75% { background-color: #5b21b6; }
+    100% { background-color: #664693; }
+}
+
+.bg-rotate-colors {
+    animation: rotate-colors 10s ease-in-out infinite;
+}
