@@ -2,6 +2,7 @@
 <script>
 
 import Step from "./Step.svelte";
+import {onMount} from "svelte";
 let steps = [
     {
         name: "KulisApp",
@@ -40,32 +41,64 @@ let benefits = [
             "Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team.",
     },
 ];
+const texts = ["Developer", "Photographer", "Creative","Networking Savant"];
+let displayText = "";
+let index = 0;
+let charIndex = 0;
+const speed = 70;
+const waitTime = 1500;
+const cursor = "_";
+
+onMount(() => {
+    function type() {
+        if (charIndex < texts[index].length) {
+            displayText = `${texts[index].substring(0, charIndex + 1)}${cursor}`;
+            charIndex++;
+            setTimeout(type, speed);
+        } else {
+            setTimeout(erase, waitTime);
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            displayText = `${texts[index].substring(0, charIndex - 1)}${cursor}`;
+            charIndex--;
+            setTimeout(erase, speed / 2);
+        } else {
+            index = (index + 1) % texts.length;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+});
 </script>
 <main>
     <section id = "intropage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 py-12 sm:py-16 lg:py-24 justify-center min-h-screen">
         <div class ="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
             <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                My name <span class="poppins text-[#FFEBD1]">Jeff</span> Bezos<br/> Absolute <span class="poppins text-[#FFEBD1]">
-            Developer
+                My name is <span class="poppins text-[#FFEBD1]">Kenji</span> Mende<br/> A <span class="poppins text-[#FFEBD1]">
+            {displayText}
             </span>
             </h2>
-            <p class="text-base sm:text-lg md:text-xl">
-                My name <span class="poppins text-[#FFFDA7]">Jeff</span> Bezos<br/> Absolute <span class="poppins text-[#FFFDA7]">
-            Developer
-            </span>
+            <p class="text-base sm:text-lg md:text-xl leading-relaxed">
+                A versatile <span class="poppins text-[#FFFDA7]">application developer</span> with a strong foundation in
+                <span class="poppins text-[#FFFDA7]">network engineering</span> experienced in configuring and maintaining
+                secure, efficient networks as well as developing modern, responsive web applications.
             </p>
-            <a class="blueShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950 cursor-pointer" 
-               href="#"
-               target="_blank"
-               >
-                <div class="absolute top-0 right-full w-full h-full1 bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"></div>
-                <h4 class="relative z-[10]">Contact me &rarr;</h4>
-            </a>
+<!--            <a class="blueShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950 cursor-pointer" -->
+<!--               href="#"-->
+<!--               target="_blank"-->
+<!--               >-->
+<!--                <div class="absolute top-0 right-full w-full h-full1 bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"></div>-->
+<!--                <h4 class="relative z-[10]">Contact me &rarr;</h4>-->
+<!--            </a>-->
         </div>
         <div class="relative shadow-2xl grid place-items-center w-fit mx-auto overflow-hidden">
             <img
                     src={"images/profile.jpg"}
-                    alt="Zetane Engine"
+                    alt="pfp"
                     class="object-cover z-[2] max-h-[60vh] lg:max-h-[70vh] shadow-lg"
             />
         </div>
@@ -76,9 +109,9 @@ let benefits = [
 
     <section class="min-h-screen py-12 sm:py-16 lg:py-24 mt-12 lg:mt-0 flex flex-col justify-center gap-20 lg:gap-24" id="projects">
         <div class="flex flex-col gap-2 text-center">
-            <h6 class="text-large sm:txt-xl md:text-2xl">Some of my work</h6>
-            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl"> My name <span class="poppins text-[#47945A]">Jeff</span> Bezos<br/> Absolute <span class="poppins text-[#D1FFDC]">
-            Developer</span>
+            <h6 class="text-large sm:txt-xl md:text-2xl">A small peek on</h6>
+            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
+                Some of my  <span class="poppins text-[#FFEBD1]">Best Projects</span>
 
             </h3>
 
@@ -88,17 +121,19 @@ let benefits = [
                 target="_blank"
                 class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
         >
-            <i class="fa-regular fa-circle-play"/>
-            <p>Watch the video</p>
+            <i class="fa-brands fa-github"/>
+            <p>Visit my Github</p>
         </a>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
                 <p>
                     KulisApp is an insect identification application with geospatial mapping of insect sightings built on <strong
                         class="text-violet-400"
-                >Flutter, YOLOv11, Stripe & Node.js + Express.js!</strong
-                > Commerce.js is a product CMS and Stripe is used for all transaction
-                    handling.
+                >Flutter, YOLOv11, Geopandas, and PostgeSQL.</strong
+                >
+                    The app leverages machine learning and image recognition to accurately classify insect species in real time through photo uploads.
+                    Its integrated mapping system allows users to visualize insect sightings on an interactive map, enabling spatial analysis of species distribution and density.
+
                 </p>
             </Step>
             <Step step={steps[1]}>
