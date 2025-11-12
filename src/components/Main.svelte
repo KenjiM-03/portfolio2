@@ -102,7 +102,7 @@ onMount(() => {
 
 
             <img
-                    src="static/images/profile.jpg"
+                    src="images/profile.jpg"
                     alt="pfp"
                     class="object-cover z-[2] max-h-[60vh] lg:max-h-[70vh] shadow-lg"
             />
