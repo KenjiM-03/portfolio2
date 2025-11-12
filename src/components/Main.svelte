@@ -7,18 +7,21 @@ let steps = [
     {
         name: "KulisApp",
         icon: "fa-solid fa-bug",
+        href: "https://github.com/KenjiM-03?tab=repositories",
         description:
             "Smoljames Store is a a merchanising store created with Next.js, Commerce.js & Stripe! Commerce.js is a CMS for managing project and Stripe is used for all transaction handling.",
     },
     {
         name: "Grand Eagle Inventory System",
         icon: "fa-solid fa-warehouse",
+        href: "https://github.com/KenjiM-03?tab=repositories",
         description:
             "Test for model robustness with customized test profiles and receive exhaustive reporting on the performance and potential vulnerabilities of your model.",
     },
     {
         name: "Prince Educational Supply Inventory System",
         icon: "fa-solid fa-book",
+        href: "https://github.com/KenjiM-03?tab=repositories",
         description:
             "Augment your datasets with our filters and dataset manipulations to ensure your models are trained on the highest quality datasets (coming soon).",
     },
@@ -117,7 +120,7 @@ onMount(() => {
 
         </div>
         <a
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                href="https://github.com/KenjiM-03"
                 target="_blank"
                 class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
         >
@@ -150,11 +153,10 @@ onMount(() => {
             </Step>
             <Step step={steps[2]}>
                 <p>
-                    An inventory <strong class="text-violet-400"
-                >SvelteKit & TailwindCSS</strong
-                >
-                    web application, hosted on
-                    <strong class="text-violet-400">Netlify</strong>, that
+                    An inventory system built on the <strong class="text-violet-400"
+                >T3 Stack</strong>
+                   A web application, hosted on
+                    <strong class="text-violet-400">vercel</strong>, that
                     consumes and caches the
                     <strong class="text-violet-400">Pokémon API</strong>
                     to display all Pokémon information. Gotta catch them all!

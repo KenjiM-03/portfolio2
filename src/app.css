@@ -1,9 +1,13 @@
 @import 'tailwindcss';
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+@import '@skeletonlabs/skeleton/themes/cerberus';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
 html{
     scroll-behavior: smooth;
+
 }
 *{
     font-family: 'Roboto',sans-serif;
