@@ -3,6 +3,7 @@
 
 import Step from "./Step.svelte";
 import {onMount} from "svelte";
+import { resolve } from '$app/paths';
 let steps = [
     {
         name: "KulisApp",
@@ -99,8 +100,10 @@ onMount(() => {
 <!--            </a>-->
         </div>
         <div class="relative shadow-2xl grid place-items-center w-fit mx-auto overflow-hidden">
+
+
             <img
-                    src={"images/profile.jpg"}
+                    src={`${resolve}/images/profile.jpg`}
                     alt="pfp"
                     class="object-cover z-[2] max-h-[60vh] lg:max-h-[70vh] shadow-lg"
             />
