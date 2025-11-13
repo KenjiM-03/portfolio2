@@ -34,10 +34,11 @@ let benefits = [
             "I taught myself to code using free online resources and absolutely fell in love with the creativity and problem solving that is involved in developing and engineering innovative new online experiences. Starting of with JavaScript, HTML & CSS and evolving my knowledge base to include JavaScript frameworks, backend programming, design, cloud services and much much more.",
     },
     {
-        name: "a product design & UX finatic",
+        name: "an IT and networking savant",
         description:
-            "Carefully crafting and designing amazing user experiences allows me to express and experiment with every morsel of creativity I have. I love the challenge of learning new design concepts and enabling users with amazing online experiences.",
+            "With a strong foundation in information technology and computer networking, I possess a deep understanding of how systems connect, communicate, and scale. From configuring networks and managing infrastructures to optimizing system performance and security, I enjoy solving complex technical challenges that bridge software and hardware. My goal is to create efficient, reliable, and secure digital environments that empower both users and organizations.",
     },
+
     {
         name: "an excellent communicator",
         description:
@@ -158,10 +159,7 @@ onMount(() => {
                     An inventory system built on the <strong class="text-violet-400"
                 >T3 Stack</strong>
                    A web application, hosted on
-                    <strong class="text-violet-400">vercel</strong>, that
-                    consumes and caches the
-                    <strong class="text-violet-400">Pokémon API</strong>
-                    to display all Pokémon information. Gotta catch them all!
+                    <strong class="text-violet-400">vercel.</strong>
                 </p>
             </Step>
         </div>
@@ -196,66 +194,149 @@ onMount(() => {
                     </div>
                 </div>
             {/each}
-            <div
-                    class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full"
+
+<!--            <div-->
+<!--                    class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full"-->
+<!--            >-->
+<!--                <table class="bg-white text-slate-700 rounded text-center">-->
+<!--                    <thead class={"border-b border-solid border-slate-200  "}>-->
+<!--                    <tr class="">-->
+<!--                        <th />-->
+<!--                        <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>-->
+<!--                        <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>-->
+<!--                        <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>-->
+<!--                        <th-->
+<!--                                class="bg-violet-700 text-white whitespace-nowrap p-4 px-8"-->
+<!--                        >Me</th-->
+<!--                        >-->
+<!--                    </tr>-->
+<!--                    </thead>-->
+<!--                    <tbody>-->
+<!--                    <tr class="border-b border-solid border-slate-200">-->
+<!--                        <td-->
+<!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+<!--                        >Dedication</td-->
+<!--                        >-->
+<!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+<!--                    </tr>-->
+<!--                    <tr class="border-b border-solid border-slate-200">-->
+<!--                        <td-->
+<!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+<!--                        >Critical Thought</td-->
+<!--                        >-->
+<!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td-->
+<!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+<!--                        >Interpersonal Skills</td-->
+<!--                        >-->
+<!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+<!--                    </tr>-->
+<!--                    <tr class="border-t border-solid border-slate-200">-->
+<!--                        <td-->
+<!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+<!--                        >Progamming Ability</td-->
+<!--                        >-->
+<!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+<!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+<!--                    </tr>-->
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+        </div>
+    </section>
+    <!-- Specialties -->
+    <section
+            id="specialties"
+            class="min-h-screen py-12 sm:py-16 lg:py-24 flex flex-col justify-center gap-12 text-center"
+    >
+        <h2 class="text-3xl font-bold">My Specialties</h2>
+
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+            <!-- Frontend -->
+            <a
+                    class="card preset-filled-surface-100-900 card-hover border border-surface-200-800 flex flex-col items-center text-center p-6"
             >
-                <table class="bg-white text-slate-700 rounded text-center">
-                    <thead class={"border-b border-solid border-slate-200  "}>
-                    <tr class="">
-                        <th />
-                        <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
-                        <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
-                        <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
-                        <th
-                                class="bg-violet-700 text-white whitespace-nowrap p-4 px-8"
-                        >Me</th
-                        >
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="border-b border-solid border-slate-200">
-                        <td
-                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-                        >Dedication</td
-                        >
-                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-slate-500" /></td>
-                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-green-500" /></td>
-                    </tr>
-                    <tr class="border-b border-solid border-slate-200">
-                        <td
-                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-                        >Critical Thought</td
-                        >
-                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-green-500" /></td>
-                    </tr>
-                    <tr>
-                        <td
-                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-                        >Interpersonal Skills</td
-                        >
-                        <td><i class="fa-solid fa-check text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-slate-500" /></td>
-                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-green-500" /></td>
-                    </tr>
-                    <tr class="border-t border-solid border-slate-200">
-                        <td
-                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-                        >Progamming Ability</td
-                        >
-                        <td><i class="fa-solid fa-check text-slate-500" /></td>
-                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-slate-500" /></td>
-                        <td><i class="fa-solid fa-check text-green-500" /></td>
-                    </tr>
-                    </tbody>
-                </table>
+                <img src="/images/64px-Svelte_Logo.svg.png" alt="Frontend" class="size-16 mb-4" />
+                <h3 class="h5 font-semibold">Frontend Development</h3>
+                <p class="opacity-70 text-sm">
+                    Crafting modern, responsive, and accessible UIs with
+                    <strong>SvelteKit</strong>, <strong>TailwindCSS</strong>, and <strong>Skeleton UI</strong>.
+                </p>
+            </a>
+
+            <!-- Programming -->
+            <a
+                    class="card preset-filled-surface-100-900 card-hover border border-surface-200-800 flex flex-col items-center text-center p-6"
+            >
+                <img src="/images/backend-coding.png" alt="Programming" class="size-16 mb-4" />
+                <h3 class="h5 font-semibold">Programming & Development</h3>
+                <p class="opacity-70 text-sm">
+                    Proficient in <strong>Python</strong>, <strong>Kotlin</strong>, <strong>Java</strong>,
+                    <strong>JavaScript</strong>, and <strong>C#</strong> for building efficient, scalable applications.
+                </p>
+            </a>
+
+            <!-- Database -->
+            <a
+                    class="card preset-filled-surface-100-900 card-hover border border-surface-200-800 flex flex-col items-center text-center p-6"
+            >
+                <img src="/images/backend-coding.png" alt="Database" class="size-16 mb-4" />
+                <h3 class="h5 font-semibold">Database Management</h3>
+                <p class="opacity-70 text-sm">
+                    Experienced with <strong>PostgreSQL</strong> for <em>data modeling</em>,
+                    <em>query optimization</em>, and <em>relational design</em> to ensure high performance.
+                </p>
+            </a>
+
+            <!-- Networking -->
+            <a
+                    class="card preset-filled-surface-100-900 card-hover border border-surface-200-800 flex flex-col items-center text-center p-6"
+            >
+                <img src="/images/64px-Cisco_logo_blue_2016.svg.png" alt="Networking" class="size-16 mb-4" />
+                <h3 class="h5 font-semibold">Networking & Systems</h3>
+                <p class="opacity-70 text-sm">
+                    Understanding network protocols, network configuration specializing on Cisco Devices.
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section
+            id="certifications"
+            class="min-h-screen py-12 sm:py-16 lg:py-24 flex flex-col justify-center gap-12 text-center"
+    >
+        <h2 class="text-3xl font-bold">Certifications</h2>
+
+        <div class="max-w-3xl mx-auto">
+            <div
+                    class="card preset-filled-surface-100-900 border border-surface-200-800 text-left p-6 shadow-lg space-y-4"
+            >
+                <h3 class="text-xl font-semibold text-center">Professional Certifications</h3>
+                <ul class="list-disc list-inside space-y-2 text-base leading-relaxed">
+                    <li>CCNA: Introduction to Networks</li>
+                    <li>CCNA: Switching, Routing, and Wireless Essentials</li>
+                    <li>CCNA: Enterprise Networking, Security, and Automation</li>
+                    <li>Japanese-Language Proficiency Test N5</li>
+
+                </ul>
             </div>
         </div>
     </section>
+
+
+
 </main>
