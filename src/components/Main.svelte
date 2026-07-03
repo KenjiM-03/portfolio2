@@ -45,6 +45,26 @@ let benefits = [
             "Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team.",
     },
 ];
+let Schools = [
+    {
+        metric: "10x",
+        name: "Mapua Malayan Colleges Mindanao 2022 - 2026",
+        description:
+        "Bachelor of Science In Computer Science"
+    },
+    {
+        name: "Lyceum of the Philippines University Davao 2020 - 2022",
+        description:
+        "Senior High School Graduate"
+    },
+
+    {
+        name: "Philippine Nikkei Jin Kai International School 2016 - 2020",
+        description:
+        "Junior High School Graduate"
+    },
+];
+
 const texts = ["Developer", "Photographer", "Creative","Networking Savant"];
 let displayText = "";
 let index = 0;
@@ -256,6 +276,96 @@ onMount(() => {
 <!--            </div>-->
         </div>
     </section>
+    <section
+            id="education"
+            class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative justify-center"
+    >
+        <div
+                class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-violet-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-violet-700 py-4"
+        >
+
+            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
+                 <span class="poppins text-violet-400">Educational</span> Attainment
+            </h3>
+        </div>
+        <div class="flex flex-col gap-20 w-full mx-auto max-x-[800px]">
+            {#each Schools as school, index}
+                <div class="flex gap-6 sm:gap-8">
+                    <p class="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
+                        0{index+1}
+                    </p>
+                    <div class="flex flex-col gap-6 sm:gap-8">
+                        <h3 class="text-2xl sm:text-3xl md:text-5xl">
+                            {school.name}
+
+                        </h3>
+                        <p>{school.description}</p>
+                    </div>
+                </div>
+            {/each}
+
+            <!--            <div-->
+            <!--                    class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full"-->
+            <!--            >-->
+            <!--                <table class="bg-white text-slate-700 rounded text-center">-->
+            <!--                    <thead class={"border-b border-solid border-slate-200  "}>-->
+            <!--                    <tr class="">-->
+            <!--                        <th />-->
+            <!--                        <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>-->
+            <!--                        <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>-->
+            <!--                        <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>-->
+            <!--                        <th-->
+            <!--                                class="bg-violet-700 text-white whitespace-nowrap p-4 px-8"-->
+            <!--                        >Me</th-->
+            <!--                        >-->
+            <!--                    </tr>-->
+            <!--                    </thead>-->
+            <!--                    <tbody>-->
+            <!--                    <tr class="border-b border-solid border-slate-200">-->
+            <!--                        <td-->
+            <!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+            <!--                        >Dedication</td-->
+            <!--                        >-->
+            <!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+            <!--                    </tr>-->
+            <!--                    <tr class="border-b border-solid border-slate-200">-->
+            <!--                        <td-->
+            <!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+            <!--                        >Critical Thought</td-->
+            <!--                        >-->
+            <!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+            <!--                    </tr>-->
+            <!--                    <tr>-->
+            <!--                        <td-->
+            <!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+            <!--                        >Interpersonal Skills</td-->
+            <!--                        >-->
+            <!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+            <!--                    </tr>-->
+            <!--                    <tr class="border-t border-solid border-slate-200">-->
+            <!--                        <td-->
+            <!--                                class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"-->
+            <!--                        >Progamming Ability</td-->
+            <!--                        >-->
+            <!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-xmark text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-slate-500" /></td>-->
+            <!--                        <td><i class="fa-solid fa-check text-green-500" /></td>-->
+            <!--                    </tr>-->
+            <!--                    </tbody>-->
+            <!--                </table>-->
+            <!--            </div>-->
+        </div>
+    </section>
     <!-- Specialties -->
     <section
             id="specialties"
@@ -320,22 +430,27 @@ onMount(() => {
     >
         <h2 class="text-3xl font-bold">Certifications</h2>
 
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-6xl mx-auto grid grid-cols-1">
+
+
             <div
                     class="card preset-filled-surface-100-900 border border-surface-200-800 text-left p-6 shadow-lg space-y-4"
             >
-                <h3 class="text-xl font-semibold text-center">Professional Certifications</h3>
+                <h3 class="text-xl font-semibold text-center">
+                    Professional Certifications
+                </h3>
                 <ul class="list-disc list-inside space-y-2 text-base leading-relaxed">
                     <li>CCNA: Introduction to Networks</li>
                     <li>CCNA: Switching, Routing, and Wireless Essentials</li>
                     <li>CCNA: Enterprise Networking, Security, and Automation</li>
                     <li>Japanese-Language Proficiency Test N5</li>
-
+                    <li>TOEIC Listening & Reading: 895/990</li>
+                    <li>TOEIC Writing: 180/200 (Level 8)</li>
+                    <li>TOEIC Speaking: 180/200 (Level 7)</li>
                 </ul>
             </div>
         </div>
     </section>
-
 
 
 </main>
