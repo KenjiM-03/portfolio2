@@ -178,7 +178,6 @@ onMount(() => {
                 A bit <span class="poppins text-violet-400">about</span> me.
             </h3>
         </div>
-        <p class="mx-auto poppins fast font-semibold text-lg sm:text-xl md:text-2xl">My name</p>
         <div class="flex flex-col gap-20 w-full mx-auto max-x-[800px]">
             {#each benefits as benefit, index}
                 <div class="flex gap-6 sm:gap-8">
