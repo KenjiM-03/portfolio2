@@ -440,10 +440,12 @@ onMount(() => {
                     Professional Certifications
                 </h3>
                 <ul class="list-disc list-inside space-y-2 text-base leading-relaxed">
+                    <li>Cisco Certified Network Associate</li>
                     <li>CCNA: Introduction to Networks</li>
                     <li>CCNA: Switching, Routing, and Wireless Essentials</li>
                     <li>CCNA: Enterprise Networking, Security, and Automation</li>
                     <li>Japanese-Language Proficiency Test N5</li>
+
                     <li>TOEIC Listening & Reading: 895/990</li>
                     <li>TOEIC Writing: 180/200 (Level 8)</li>
                     <li>TOEIC Speaking: 180/200 (Level 7)</li>
